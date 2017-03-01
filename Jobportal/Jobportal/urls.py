@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^register/$', views.register),
 	url(r'^about-us/$', views.about),
     url(r'^contact-us/$', views.contact),
+    url(r'^candidateslist/$', views.listview),
 
 
 ]

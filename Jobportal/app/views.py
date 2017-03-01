@@ -20,4 +20,8 @@ def contact(request):
 def about(request):
     return render_to_response("about-us.html", context_instance=RequestContext(request))
 
+def listview(request):
+
+    return render_to_response("candidate-listing.html", context_instance=RequestContext(request))
+
 # Create your views here.

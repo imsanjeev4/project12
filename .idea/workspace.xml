@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd20711b-240e-4d1f-bd81-1445693b9934" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.eot" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.ttf" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.woff" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.woff2" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfontd41d.eot" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfontd41d.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regulard41d.eot" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regulard41d.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/about-us-img1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/about-us-img1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/about-us-img2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/about-us-img2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/andriod-btn.png" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/andriod-btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/app-bg.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/app-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/app-mobile.png" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/app-mobile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/apple-btn.png" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/apple-btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/blog/1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/blog/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/blog/2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/blog/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/blog/3.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/blog/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/blog/4.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/blog/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/blog/large-1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/blog/large-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/01.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/02.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/03.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/04.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/05.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/candidates/05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-3.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-4.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/coment-avatar-4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo10.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo11.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo12.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo12.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo13.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo13.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo14.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo14.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo15.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo15.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo16.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo16.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo3.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo4.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo5.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo6.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo7.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo8.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo9.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/employers/emplogo9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/googlead.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/googlead.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/googlead2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/googlead2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/jobs/jobimg.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/jobs/jobimg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/logo.png" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/news-1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/news-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/news-2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/news-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/news-3.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/news-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/page-title-bg.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/page-title-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img1.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img3.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img4.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img5.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img6.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/portfolio/portfolio-img6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/search-bg.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/search-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/slider/banner.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/slider/banner.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/slider/banner2.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/slider/banner2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/slider/dummy.png" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/slider/dummy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/userimg.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/userimg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/images/videobg.jpg" afterPath="$PROJECT_DIR$/Jobportal/app/static/images/videobg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/loader.gif" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/loader.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/timer.png" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/timer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/favicon.ico" afterPath="$PROJECT_DIR$/Jobportal/app/templates/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/db.sqlite3" afterPath="$PROJECT_DIR$/Jobportal/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/Jobportal/__init__.py" afterPath="$PROJECT_DIR$/Jobportal/Jobportal/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/Jobportal/settings.py" afterPath="$PROJECT_DIR$/Jobportal/Jobportal/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/Jobportal/urls.py" afterPath="$PROJECT_DIR$/Jobportal/Jobportal/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/Jobportal/wsgi.py" afterPath="$PROJECT_DIR$/Jobportal/Jobportal/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/__init__.py" afterPath="$PROJECT_DIR$/Jobportal/app/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/admin.py" afterPath="$PROJECT_DIR$/Jobportal/app/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/apps.py" afterPath="$PROJECT_DIR$/Jobportal/app/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/migrations/__init__.py" afterPath="$PROJECT_DIR$/Jobportal/app/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/models.py" afterPath="$PROJECT_DIR$/Jobportal/app/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Jobportal/app/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/css/font-awesome.css" afterPath="$PROJECT_DIR$/Jobportal/app/static/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/css/main.css" afterPath="$PROJECT_DIR$/Jobportal/app/static/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/css/owl.carousel.css" afterPath="$PROJECT_DIR$/Jobportal/app/static/css/owl.carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/css/owl.video.play.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/css/owl.video.play.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.svg" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/fontawesome-webfont5b62.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Jobportal/app/static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/jquery-2.1.4.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/jquery.mapit.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/jquery.mapit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/map.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/owl.carousel.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/owl.carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_left.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_left.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_left2.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_left2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_right.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_right.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_right2.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrow_right2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrowleft.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrowleft.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrowright.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/arrowright.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/boxed_bgtile.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/boxed_bgtile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullet.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullet_boxed.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullet_boxed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullets.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullets2.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/bullets2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/coloredbg.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/coloredbg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile_3x3.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile_3x3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile_3x3_white.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile_3x3_white.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile_white.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/gridtile_white.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/large_left.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/large_left.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/large_right.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/large_right.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/navigdots.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/navigdots.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/navigdots_bgtile.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/navigdots_bgtile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/shadow1.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/shadow1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/shadow2.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/shadow2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/shadow3.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/shadow3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_left.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_left.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_left_boxed.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_left_boxed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_right.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_right.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_right_boxed.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/assets/small_right_boxed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/css/settings.css" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/css/settings.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c6-2.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c6-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c6-3.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c6-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c6.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c690c6.svg" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/font/revicons90c690c6.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/images/gradient/g30.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/images/gradient/g30.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/images/gradient/g40.html" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/images/gradient/g40.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/js/jquery.themepunch.tools.min.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/revolution-slider/js/jquery.themepunch.tools.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/static/js/script.js" afterPath="$PROJECT_DIR$/Jobportal/app/static/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/404.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/about-us.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/about-us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/base.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/blog-detail.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/blog-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/blog-full-width.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/blog-full-width.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/blog-grid.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/blog-grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/blog.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/candidate-detail.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/candidate-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/candidate-listing.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/candidate-listing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/company-detail.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/company-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/contact-us.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/contact-us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/edit-profile.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/edit-profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/faqs.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/faqs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/index.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/index2.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/index2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/index3.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/index3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/inner-base.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/inner-base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/job-detail.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/job-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/job-listing.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/job-listing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/login.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/packages.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/packages.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/post-job.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/post-job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/register.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/templates/typography.html" afterPath="$PROJECT_DIR$/Jobportal/app/templates/typography.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/tests.py" afterPath="$PROJECT_DIR$/Jobportal/app/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/app/views.py" afterPath="$PROJECT_DIR$/Jobportal/app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobportal/manage.py" afterPath="$PROJECT_DIR$/Jobportal/manage.py" />
+    </list>
+    <ignored path="project12.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="project12" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidate-listing.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/candidate-listing.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="454" column="0" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inner-base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/inner-base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/Jobportal/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-us.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/contact-us.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Jobportal/app/templates/candidate-listing.html" />
+        <option value="$PROJECT_DIR$/Jobportal/app/views.py" />
+        <option value="$PROJECT_DIR$/Jobportal/Jobportal/urls.py" />
+        <option value="$PROJECT_DIR$/Jobportal/app/templates/register.html" />
+        <option value="$PROJECT_DIR$/Jobportal/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/Jobportal/app/templates/inner-base.html" />
+        <option value="$PROJECT_DIR$/Jobportal/app/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jobportal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jobportal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jobportal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jobportal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jobportal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd20711b-240e-4d1f-bd81-1445693b9934" name="Default" comment="" />
+      <created>1488388630970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488388630970</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3374613" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/candidate-listing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="454" column="0" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/contact-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/Jobportal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/templates/inner-base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobportal/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
