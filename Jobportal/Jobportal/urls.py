@@ -22,9 +22,11 @@ urlpatterns = [
     url(r'^$', views.index),
     url(r'^index/$', views.index),
     url(r'^register/$', views.register),
+	url(r'^login/$', views.login),
 	url(r'^about-us/$', views.about),
     url(r'^contact-us/$', views.contact),
     url(r'^candidateslist/$', views.listview),
+	 url(r'^edit-profile/$', views.profile),
 
 
 ]

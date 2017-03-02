@@ -35,14 +35,16 @@
           </div>
           <div class="tab-content">
             <div id="candidate" class="formpanel tab-pane fade in active">
+			<form name = "register" action = "/register/" method = "post">
+			{% csrf_token %}
               <div class="formrow">
-                <input type="text" name="name" class="form-control" placeholder="Full Name">
+                <input type="text" name="fullname" class="form-control" placeholder="Full Name">
               </div>
               <div class="formrow">
                 <input type="text" name="username" class="form-control" placeholder="Username">
               </div>
               <div class="formrow">
-                <input type="text" name="email" class="form-control" placeholder="Email">
+                <input type="text" name="emailid" class="form-control" placeholder="Email">
               </div>
               <div class="formrow">
                 <input type="text" name="password" class="form-control" placeholder="Password">
@@ -54,6 +56,7 @@
                 <input type="checkbox" value="agree text" name="agree" />
                 There are many variations of passages of Lorem Ipsum available</div>
               <input type="submit" class="btn" value="Register">
+			  </form>
             </div>
             <div id="employer" class="formpanel tab-pane fade in">
               <div class="formrow">
