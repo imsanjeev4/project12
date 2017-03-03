@@ -17,6 +17,7 @@
     </div>
   </div>
 </div>
+
 <!-- Page Title End -->
 
 <div class="listpgWraper">
@@ -29,9 +30,12 @@
             <!-- Personal Information -->
             <h5>Personal Information</h5>
             <div class="row">
+			
               <div class="col-md-6">
+			  <form method="post" enctype="multipart/form-data">
+			  {% csrf_token %}
                 <div class="formrow">
-                  <input type="text" name="name" class="form-control" placeholder="User Name">
+                  <input type="text" name="name" class="form-control" placeholder="UserName">
                 </div>
               </div>
               <div class="col-md-6">
@@ -131,6 +135,7 @@
                 </div>
               </div>
             </div>
+			</form>
             <hr>
             
             <!-- Skills -->

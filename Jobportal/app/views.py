@@ -6,8 +6,8 @@ from django.views.decorators.csrf import csrf_protect
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
-from app.models import Register
-
+from app.models import Register, Document
+import hashlib
 def index(request):
     return render_to_response("index.html", context_instance = RequestContext(request))
 
@@ -16,19 +16,26 @@ def register(request):
 		fname = request.POST['fullname']
 		uname = request.POST['username']
 		pword = request.POST['password']
+		#password = hashlib.md5(pword).hexdigest()
+		#print(password)
 		eid = request.POST['emailid']
-		registersers = Register(
-			fullname= fname,
-			username = uname,
-            #password = md5_crypt.encrypt(pword),
-            #password = hashlib.md5(pword),
-            #password = hashlib.new(pword).hexdigest(),
-			password = pword,
-			emailid = eid
-		)
-		# REcord inserted
-		registersers.save()
-		return render_to_response("register.html", context_instance = RequestContext(request))
+		checkuser = Register.objects.filter(emailid = eid).exists()
+		print(checkuser)
+		if checkuser == False:
+			registersers = Register(
+				fullname= fname,
+				username = uname,
+				#password = md5_crypt.encrypt(pword),
+				#password = hashlib.md5(pword),
+				#password = hashlib.new(pword).hexdigest(),
+				password = pword,
+				emailid = eid
+			)
+			registersers.save()
+			return render_to_response("register.html", {'mess': 'Registration successfully','status':'True'}, context_instance = RequestContext(request))
+		else:
+			return render_to_response("register.html", {'mess': 'Email id already in use.Please check another emailid','status':'False'}, context_instance = RequestContext(request))
+		
 	else:
 		return render_to_response("register.html", context_instance = RequestContext(request))
 
@@ -68,4 +75,5 @@ def listview(request):
 
 def profile(request):
     return render_to_response("edit-profile.html", context_instance = RequestContext(request))
+	
 # Create your views here.
