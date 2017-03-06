@@ -117,7 +117,6 @@ def profile(request):
 		linkedin = request.POST['linkedin']
 		pinterest = request.POST['pinterest']
 		behance = request.POST['behance']
-		print(username,email,phone,website,address,designation,experience,age,current,demand,edulevel,uploadcv,project_file)
 		profileInfo = CandidateInfo(
 			username=username,
 			email=email,
@@ -156,7 +155,7 @@ def profile(request):
 			behance=behance		
 		)
 		profileInfo.save()
-		return render_to_response("edit-profile.html", context_instance = RequestContext(request))
+		return render_to_response("edit-profile.html", {'status': 'True', 'msg':'Personal Information successfully saved !'}, context_instance = RequestContext(request))
 	else:
 		return render_to_response("edit-profile.html", context_instance = RequestContext(request))
 	
