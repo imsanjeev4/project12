@@ -32,7 +32,7 @@
             <div class="row">
 			
               <div class="col-md-6">
-			  <form method="post" enctype="multipart/form-data">
+			  <form method="post" enctype="multipart/form-data" action="/edit-profile/">
 			  {% csrf_token %}
                 <div class="formrow">
                   <input type="text" name="name" class="form-control" placeholder="UserName">
@@ -135,7 +135,6 @@
                 </div>
               </div>
             </div>
-			</form>
             <hr>
             
             <!-- Skills -->
@@ -192,7 +191,7 @@
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="join-frm">
+                  <select class="form-control" name="join_frm">
                     <option>Join From</option>
                     <option>2011</option>
                     <option>2012</option>
@@ -223,7 +222,7 @@
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea class="form-control" name="about-company" placeholder="About Company"></textarea>
+                  <textarea class="form-control" name="about_company" placeholder="About Company"></textarea>
                 </div>
               </div>
             </div>
@@ -271,7 +270,7 @@
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <input type="file" name="image" class="form-control">
+                  <input type="file" name="project_file" class="form-control">
                 </div>
               </div>
             </div>
@@ -308,7 +307,7 @@
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" class="form-control" placeholder="Behance">
+                  <input type="text" name="behance" class="form-control" placeholder="Behance">
                 </div>
               </div>
             </div>
@@ -316,6 +315,7 @@
             <input type="submit" class="btn" value="Update and Save">
           </div>
         </div>
+		</form>
       </div>
     </div>
   </div>
