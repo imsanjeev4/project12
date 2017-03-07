@@ -5,8 +5,8 @@
 {% if status == 'True' %}
    <div class="alert alert-success" role="alert"><strong> {{ mess }}.</strong></div>
 {% endif %}
-<h1>{{ request.session.email }}</h1>
-{% if request.session.email !="" %}
+<!--<h1>{{ request.session.sessionuser }}</h1>-->
+{% if request.session.sessionuser != None %}
 	<div class="pageTitle">
 	<div class="container">
     <div class="row">
@@ -196,12 +196,12 @@
                 <div class="formrow">
                   <select class="form-control" name="join_frm" value = "{{ request.session.join_frm }}">
                     <option>Join From</option>
-                    <option>2011</option>
-                    <option>2012</option>
-                    <option>2013</option>
-                    <option>2014</option>
-                    <option>2015</option>
-                    <option>2016</option>
+                    <option value = "{{ request.session.join_frm }}">2011</option>
+                    <option value = "{{ request.session.join_frm }}">2012</option>
+                    <option value = "{{ request.session.join_frm }}">2013</option>
+                    <option value = "{{ request.session.join_frm }}">2014</option>
+                    <option value = "{{ request.session.join_frm }}">2015</option>
+                    <option value = "{{ request.session.join_frm }}">2016</option>
                   </select>
                 </div>
               </div>
@@ -324,5 +324,7 @@
     </div>
   </div>
 	</div>
+{% else %}
+    <script>window.location.href = '/index/';</script>
 {% endif %}
 {% endblock %}

@@ -2,7 +2,8 @@
 {% block content %}
 {% load staticfiles %}
 <!-- Page Title start -->
-<div class="pageTitle">
+{% if request.session.sessionuser != None %}
+    <div class="pageTitle">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6">
@@ -13,10 +14,10 @@
       </div>
     </div>
   </div>
-</div>
+    </div>
 <!-- Page Title End -->
 
-<div class="listpgWraper">
+    <div class="listpgWraper">
   <div class="container"> 
     
     <!-- Job Header start -->
@@ -333,5 +334,8 @@
       </div>
     </div>
   </div>
-</div>
+    </div>
+{% else %}
+    <script>window.location.href = '/index/';</script>
+{% endif %}
 {% endblock %}

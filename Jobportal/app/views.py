@@ -21,6 +21,9 @@ def register(request):
 		#print(password)
 		eid = request.POST['emailid']
 		checkuser = Register.objects.filter(emailid = eid).exists()
+		if checkuser == True:
+			return render_to_response("register.html", {'mess': 'Email id already in use.Please check another emailid',
+														'status': 'True'}, context_instance=RequestContext(request))
 		print(checkuser)
 		if checkuser == False:
 			registersers = Register(
@@ -33,9 +36,8 @@ def register(request):
 				emailid = eid
 			)
 			registersers.save()
-			return render_to_response("login.html", {'mess': 'Registration successfully','status':'True'}, context_instance = RequestContext(request))
-		else:
-			return render_to_response("register.html", {'mess': 'Email id already in use.Please check another emailid','status':'False'}, context_instance = RequestContext(request))	
+			return render_to_response("login.html", {'mess': 'Registration successfully','status':'False'}, context_instance = RequestContext(request))
+
 	return render_to_response("register.html", context_instance = RequestContext(request))
 
 def login(request):
@@ -49,7 +51,6 @@ def login(request):
 			print('PASSWORD',password)
 			checkuser = Register.objects.filter(emailid = username).exists()
 			if checkuser == True:
-				
 				checkuser = Register.objects.get(emailid = username)
 				if  username == checkuser.emailid.strip() and password == checkuser.password:
 					request.session['sessionuser'] = username
@@ -202,7 +203,7 @@ def candidatedetail(request):
 	return render_to_response("candidate-detail.html", context_instance = RequestContext(request))
 
 def logout(request):
-	if request.method == 'POST':
+	if request.method == 'POST' and request.session['sessionuser'] != None:
 		request.session['username'] = ''
 		request.session['email'] = ''
 		request.session['phone'] = ''
@@ -239,4 +240,19 @@ def logout(request):
 		request.session['behance'] = ''
 		return render_to_response("index.html", context_instance = RequestContext(request))
 	return render_to_response("index.html", context_instance = RequestContext(request))
+
+def resetpassword(request):
+	if request.method == 'POST':
+		oldpassword = request.POST['oldpassword']
+		getoldpasswordfromdb = Register.objects.filter(password=oldpassword)
+
+		if oldpassword != getoldpasswordfromdb:
+			return render_to_response("resetpassword.html", {'status': 'False', 'mess': 'Old password not match'}, content_type = RequestContext(request))
+		newpassword = request.POST['password']
+		confirmpassword = request.POST['confirmpassword']
+		if confirmpassword != newpassword:
+			return render_to_response("resetpassword.html", {'status':'False', 'mess':'ConfirmPassword not match with NewPassword'}, content_type = RequestContext(request))
+
+	return render_to_response("resetpassword.html", context_instance = RequestContext(request))
+#
 # Create your views here.
