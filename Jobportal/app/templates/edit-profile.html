@@ -3,10 +3,12 @@
 {% load staticfiles %}
 
 {% if status == 'True' %}
-   <div class="alert alert-success" role="alert"><strong> {{ msg }}.</strong></div>
+   <div class="alert alert-success" role="alert"><strong> {{ mess }}.</strong></div>
 {% endif %}
-<div class="pageTitle">
-  <div class="container">
+<h1>{{ request.session.email }}</h1>
+{% if request.session.email !="" %}
+	<div class="pageTitle">
+	<div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6">
         <h1 class="page-heading">Edit Profile</h1>
@@ -15,13 +17,13 @@
         <div class="breadCrumb"><a href="#.">Home</a> / <span>Edit Profile</span></div>
       </div>
     </div>
-  </div>
-</div>
+	</div>
+	</div>
 
 <!-- Page Title End -->
 
-<div class="listpgWraper">
-  <div class="container">
+	<div class="listpgWraper">
+	<div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="userccount">
@@ -35,37 +37,37 @@
 			  <form method="post" enctype="multipart/form-data" action="/edit-profile/">
 			  {% csrf_token %}
                 <div class="formrow">
-                  <input type="text" name="name" class="form-control" placeholder="UserName">
+                  <input type="text" name="name" class="form-control" placeholder="UserName" value = "{{ request.session.username }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="email" class="form-control" placeholder="Email">
+                  <input type="text" name="email" class="form-control" placeholder="Email" value = "{{ request.session.email }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="phone" class="form-control" placeholder="Phone">
+                  <input type="text" name="phone" class="form-control" placeholder="Phone" value = "{{ request.session.phone }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="website" class="form-control" placeholder="Website">
+                  <input type="text" name="website" class="form-control" placeholder="Website" value = "{{ request.session.website }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="address" class="form-control" placeholder="Address">
+                  <input type="text" name="address" class="form-control" placeholder="Address" value = "{{ request.session.address }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="designation" class="form-control" placeholder="Designation">
+                  <input type="text" name="designation" class="form-control" placeholder="Designation" value = "{{ request.session.designation }}">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="experience">
+                  <select class="form-control" name="experience" value = "{{ request.session.experience }}">
                     <option>Experience</option>
                     <option>Fresh</option>
                     <option>1 Year</option>
@@ -79,7 +81,7 @@
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="age">
+                  <select class="form-control" name="age" value = "{{ request.session.age }}">
                     <option>Age</option>
                     <option>20 Years</option>
                     <option>21 Years</option>
@@ -97,7 +99,7 @@
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="current">
+                  <select class="form-control" name="current" value = "{{ request.session.current }}">
                     <option>Current Salary</option>
                     <option>$500 - $999</option>
                     <option>$999 - $1499</option>
@@ -109,7 +111,7 @@
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="demand">
+                  <select class="form-control" name="demand" value = "{{ request.session.demand }}">
                     <option>Demand</option>
                     <option>$500 - $999</option>
                     <option>$999 - $1499</option>
@@ -121,17 +123,18 @@
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="edulevel" class="form-control" placeholder="Education Level">
+                  <input type="text" name="edulevel" class="form-control" placeholder="Education Level" value = "{{ request.session.edulevel }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="file" name="uploadcv" class="form-control">
+                  <input type="file" name="uploadcv" class="form-control" value = "{{ request.session.uploaded_file_url }}">
+				  <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea name="aboutme" class="form-control" placeholder="About Me"></textarea>
+                  <textarea name="aboutme" class="form-control" placeholder="About Me" value = "{{ request.session.aboutme }}"></textarea>
                 </div>
               </div>
             </div>
@@ -142,12 +145,12 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="skill" class="form-control" placeholder="Skill Name">
+                  <input type="text" name="skill" class="form-control" placeholder="Skill Name" value = "{{ request.session.skill }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="skilllevel" class="form-control" placeholder="Skill Level in %">
+                  <input type="text" name="skilllevel" class="form-control" placeholder="Skill Level in %" value = "{{ request.session.skilllevel }}">
                 </div>
               </div>
             </div>
@@ -159,17 +162,17 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="degreename" class="form-control" placeholder="Degree Name">
+                  <input type="text" name="degreename" class="form-control" placeholder="Degree Name" value = "{{ request.session.degreename }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="degreedate" class="form-control" placeholder="Degree Compelete Date">
+                  <input type="text" name="degreedate" class="form-control" placeholder="Degree Compelete Date" value = "{{ request.session.degreedate }}">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea class="form-control" name="aboutdeg" placeholder="About Degree"></textarea>
+                  <textarea class="form-control" name="aboutdeg" placeholder="About Degree" value = "{{ request.session.aboutdeg }}"></textarea>
                 </div>
               </div>
             </div>
@@ -181,17 +184,17 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="company" class="form-control" placeholder="Company">
+                  <input type="text" name="company" class="form-control" placeholder="Company" value = "{{ request.session.company }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="webcom" class="form-control" placeholder="Company Website">
+                  <input type="text" name="webcom" class="form-control" placeholder="Company Website" value = "{{ request.session.webcom }}">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="join_frm">
+                  <select class="form-control" name="join_frm" value = "{{ request.session.join_frm }}">
                     <option>Join From</option>
                     <option>2011</option>
                     <option>2012</option>
@@ -204,7 +207,7 @@
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="endon">
+                  <select class="form-control" name="endon" value = "{{ request.session.endon }}">
                     <option>End on</option>
                     <option>2011</option>
                     <option>2012</option>
@@ -217,12 +220,12 @@
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="location" class="form-control" placeholder="Location">
+                  <input type="text" name="location" class="form-control" placeholder="Location" value = "{{ request.session.location }}">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea class="form-control" name="about_company" placeholder="About Company"></textarea>
+                  <textarea class="form-control" name="about_company" placeholder="About Company" value = "{{ request.session.about_company }}"></textarea>
                 </div>
               </div>
             </div>
@@ -234,12 +237,12 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="projname" class="form-control" placeholder="Project Name">
+                  <input type="text" name="projname" class="form-control" placeholder="Project Name" value = "{{ request.session.projname }}">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="startfrm">
+                  <select class="form-control" name="startfrm" value = "{{ request.session.startfrm }}">
                     <option>Srart From</option>
                     <option>2011</option>
                     <option>2012</option>
@@ -252,7 +255,7 @@
               </div>
               <div class="col-md-3">
                 <div class="formrow">
-                  <select class="form-control" name="endon2">
+                  <select class="form-control" name="endon2" value = "{{ request.session.projendon }}">
                     <option>End on</option>
                     <option>2011</option>
                     <option>2012</option>
@@ -265,12 +268,13 @@
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <input type="text" name="projdesc" class="form-control" placeholder="Project Short Description">
+                  <input type="text" name="projdesc" class="form-control" placeholder="Project Short Description" value = "{{ request.session.projdesc }}">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <input type="file" name="project_file" class="form-control">
+                  <input type="file" name="project_file" class="form-control" value = "{{ request.session.project_file_url }}">
+				  <a href="{{ project_file_url }}">{{ project_file_url }}</a></p>
                 </div>
               </div>
             </div>
@@ -282,32 +286,32 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="fb" class="form-control" placeholder="Facebook">
+                  <input type="text" name="fb" class="form-control" placeholder="Facebook" value = "{{ request.session.fb }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="twitter" class="form-control" placeholder="Twitter">
+                  <input type="text" name="twitter" class="form-control" placeholder="Twitter" value = "{{ request.session.twitter }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="gplus" class="form-control" placeholder="Google Plus">
+                  <input type="text" name="gplus" class="form-control" placeholder="Google Plus" value = "{{ request.session.gplus }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="linkedin" class="form-control" placeholder="Linked In">
+                  <input type="text" name="linkedin" class="form-control" placeholder="Linked In" value = "{{ request.session.linkedin }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="pinterest" class="form-control" placeholder="Pinterest">
+                  <input type="text" name="pinterest" class="form-control" placeholder="Pinterest" value = "{{ request.session.pinterest }}">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="text" name="behance" class="form-control" placeholder="Behance">
+                  <input type="text" name="behance" class="form-control" placeholder="Behance" value = "{{ request.session.behance }}">
                 </div>
               </div>
             </div>
@@ -319,5 +323,6 @@
       </div>
     </div>
   </div>
-</div>
+	</div>
+{% endif %}
 {% endblock %}

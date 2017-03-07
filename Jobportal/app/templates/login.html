@@ -2,9 +2,11 @@
 {% block content %}
 {% load staticfiles %}
 
-{% if mess %}
+{% if status == 'True' %}
+   <div class="alert alert-success" role="alert"><strong>Welldone !</strong> {{ mess }}.</div>
+{% else %}
    <div class="alert alert-danger" role="alert"><strong>Sorry !</strong> {{ mess }}.</div>
-	{% endif %}
+{% endif %}
 <!-- Page Title start -->
 <div class="pageTitle">
   <div class="container">

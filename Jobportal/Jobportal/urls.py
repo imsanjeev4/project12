@@ -26,7 +26,11 @@ urlpatterns = [
 	url(r'^about-us/$', views.about),
     url(r'^contact-us/$', views.contact),
     url(r'^candidateslist/$', views.listview),
-	 url(r'^edit-profile/$', views.profile),
+	#url(r'^edit-profile/$', views.login),
+	url(r'^edit-profile/$', views.profile),
+	url(r'^candidate-detail/$', views.candidatedetail),
+	url(r'^logout/$', views.logout),
+	
 
 
 ]

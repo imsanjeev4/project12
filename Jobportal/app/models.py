@@ -56,7 +56,7 @@ class CandidateInfo(models.Model):
 	pinterest = models.CharField(max_length=50)
 	behance = models.CharField(max_length=50)
 	def __str__(self):
-		return self.description
+		return self.username
 	class Meta:
 		db_table = "PersonalInfo"
 # Create your models here.

@@ -33,12 +33,10 @@ def register(request):
 				emailid = eid
 			)
 			registersers.save()
-			return render_to_response("register.html", {'mess': 'Registration successfully','status':'True'}, context_instance = RequestContext(request))
+			return render_to_response("login.html", {'mess': 'Registration successfully','status':'True'}, context_instance = RequestContext(request))
 		else:
-			return render_to_response("register.html", {'mess': 'Email id already in use.Please check another emailid','status':'False'}, context_instance = RequestContext(request))
-		
-	else:
-		return render_to_response("register.html", context_instance = RequestContext(request))
+			return render_to_response("register.html", {'mess': 'Email id already in use.Please check another emailid','status':'False'}, context_instance = RequestContext(request))	
+	return render_to_response("register.html", context_instance = RequestContext(request))
 
 def login(request):
 	if request.method == 'POST':
@@ -51,16 +49,17 @@ def login(request):
 			print('PASSWORD',password)
 			checkuser = Register.objects.filter(emailid = username).exists()
 			if checkuser == True:
+				
 				checkuser = Register.objects.get(emailid = username)
 				if  username == checkuser.emailid.strip() and password == checkuser.password:
-					request.session['usersname'] = username
-					return render_to_response("edit-profile.html", {'mess': 'login successfully'}, context_instance=RequestContext(request))
+					request.session['sessionuser'] = username
+					return render_to_response("edit-profile.html", {'mess': 'login successfully','status':'True'}, context_instance=RequestContext(request))
 				else:
-					return render_to_response("login.html", {'mess': 'Invalid Userid or Password'},context_instance=RequestContext(request))
+					return render_to_response("login.html", {'mess': 'Invalid Userid or Password', 'status':'False'},context_instance=RequestContext(request))
 			else:
-				return render_to_response("login.html", {'mess': 'Invalid Username'},context_instance=RequestContext(request))
+				return render_to_response("login.html", {'mess': 'Invalid Username', 'status':'False'},context_instance=RequestContext(request))
 		else:
-			return render_to_response("register.html", {'mess': 'First Registeruser'},context_instance=RequestContext(request))
+			return render_to_response("register.html", {'mess': 'First Registeruser', 'status':'False'},context_instance=RequestContext(request))
 			
 	return render_to_response("login.html", context_instance = RequestContext(request))
 
@@ -90,7 +89,8 @@ def profile(request):
 		uploadcv = request.FILES['uploadcv']
 		fs = FileSystemStorage()
 		filename_cv = fs.save(uploadcv.name, uploadcv)
-		#uploaded_file_url = fs.url(filename)
+		uploaded_file_url = fs.url(filename_cv)
+		print('URL', uploaded_file_url )
 		aboutme = request.POST['aboutme']
 		skill = request.POST['skill']
 		skilllevel = request.POST['skilllevel']
@@ -110,7 +110,7 @@ def profile(request):
 		project_file = request.FILES['project_file']
 		projectfs = FileSystemStorage()
 		filename = projectfs.save(project_file.name, project_file)
-		#uploaded_file_url = fs.url(filename)
+		project_file_url = fs.url(filename)
 		fb = request.POST['fb']
 		twitter = request.POST['twitter']
 		gplus = request.POST['gplus']
@@ -155,8 +155,88 @@ def profile(request):
 			behance=behance		
 		)
 		profileInfo.save()
-		return render_to_response("edit-profile.html", {'status': 'True', 'msg':'Personal Information successfully saved !'}, context_instance = RequestContext(request))
+		print('Session',request.session['sessionuser'])
+		request.session['username'] = username
+		request.session['email'] = email
+		request.session['phone'] = phone
+		request.session['website'] = website
+		request.session['address'] = address
+		request.session['designation'] = designation
+		request.session['experience'] = experience
+		request.session['age'] = age
+		request.session['current'] = current
+		request.session['demand'] = demand
+		request.session['edulevel'] = edulevel
+		request.session['uploaded_file_url'] = uploaded_file_url 
+		request.session['aboutme'] = aboutme
+		request.session['skill'] = skill
+		request.session['skilllevel'] = skilllevel
+		request.session['degreename'] = degreename
+		request.session['degreedate'] = degreedate
+		request.session['aboutdeg'] = aboutdeg
+		request.session['company'] = company
+		request.session['webcom'] = webcom
+		request.session['join_frm'] = join_frm
+		request.session['endon'] = endon
+		request.session['location'] = location 
+		request.session['about_company'] = about_company
+		request.session['projname'] = projname
+		request.session['startfrm'] = startfrm
+		request.session['projendon'] = projendon
+		request.session['project_file_url'] = project_file_url
+		request.session['fb'] = fb
+		request.session['twitter'] = twitter
+		request.session['gplus'] = gplus
+		request.session['linkedin'] = linkedin
+		request.session['pinterest'] = pinterest
+		request.session['behance'] = behance
+		
+		#get_data = CandidateInfo.objects.get(email=request.session['sessionuser'])
+		#get_data = CandidateInfo.objects.get(email=request.session['sessionuser'])
+		#print('DATA', get_data.project_desc)
+		return render_to_response("edit-profile.html", {'status': 'True', 'mess':'Personal Information successfully saved !','user':username},context_instance = RequestContext(request))
 	else:
 		return render_to_response("edit-profile.html", context_instance = RequestContext(request))
-	
+
+def candidatedetail(request):
+	return render_to_response("candidate-detail.html", context_instance = RequestContext(request))
+
+def logout(request):
+	if request.method == 'POST':
+		request.session['username'] = ''
+		request.session['email'] = ''
+		request.session['phone'] = ''
+		request.session['website'] = ''
+		request.session['address'] = ''
+		request.session['designation'] = ''
+		request.session['experience'] = ''
+		request.session['age'] = ''
+		request.session['current'] = ''
+		request.session['demand'] = ''
+		request.session['edulevel'] = ''
+		request.session['uploaded_file_url'] = '' 
+		request.session['aboutme'] = ''
+		request.session['skill'] = ''
+		request.session['skilllevel'] = ''
+		request.session['degreename'] = ''
+		request.session['degreedate'] = ''
+		request.session['aboutdeg'] = ''
+		request.session['company'] = ''
+		request.session['webcom'] = ''
+		request.session['join_frm'] = ''
+		request.session['endon'] = ''
+		request.session['location'] = '' 
+		request.session['about_company'] = ''
+		request.session['projname'] = ''
+		request.session['startfrm'] = ''
+		request.session['projendon'] = ''
+		request.session['project_file_url'] = ''
+		request.session['fb'] = ''
+		request.session['twitter'] = ''
+		request.session['gplus'] = ''
+		request.session['linkedin'] = ''
+		request.session['pinterest'] = ''
+		request.session['behance'] = ''
+		return render_to_response("index.html", context_instance = RequestContext(request))
+	return render_to_response("index.html", context_instance = RequestContext(request))
 # Create your views here.
