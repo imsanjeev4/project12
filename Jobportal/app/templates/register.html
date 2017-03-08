@@ -2,10 +2,10 @@
 {% block content %}
 {% load staticfiles %}
 
-{% if status == 'False' %}
+{% if status == 'True' %}
 	<div class="alert alert-success" role="alert"><strong>Welldone !</strong> {{ mess }}.</div>
 {% endif %}
-{% if status == 'True' %}
+{% if status == 'False' %}
 
   <div class="alert alert-danger" role="alert"><strong> {{ mess }}</strong></div>
 {% endif %}

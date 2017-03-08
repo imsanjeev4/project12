@@ -23,7 +23,7 @@ def register(request):
 		checkuser = Register.objects.filter(emailid = eid).exists()
 		if checkuser == True:
 			return render_to_response("register.html", {'mess': 'Email id already in use.Please check another emailid',
-														'status': 'True'}, context_instance=RequestContext(request))
+														'status': 'False'}, context_instance=RequestContext(request))
 		print(checkuser)
 		if checkuser == False:
 			registersers = Register(
@@ -36,7 +36,7 @@ def register(request):
 				emailid = eid
 			)
 			registersers.save()
-			return render_to_response("login.html", {'mess': 'Registration successfully','status':'False'}, context_instance = RequestContext(request))
+			return render_to_response("login.html", {'mess': 'Registration successfully','status':'True'}, context_instance = RequestContext(request))
 
 	return render_to_response("register.html", context_instance = RequestContext(request))
 
@@ -204,10 +204,42 @@ def candidatedetail(request):
 
 def logout(request):
 	if request.method == 'POST':
-		print('sssssssssss', request.session['sessionuser'])
 		request.session['sessionuser'] = ''
-		print('dada',request.session['sessionuser'])
 		if request.session['sessionuser'] == None:
+			#request.session['username'] = No
+			del request.session['username']
+			del request.session['email'] 
+			del request.session['phone']
+			del request.session['website']
+			del request.session['address']
+			del request.session['designation']
+			del request.session['experience']
+			del request.session['age'] 
+			del request.session['current']
+			del request.session['demand'] 
+			del request.session['edulevel']
+			del request.session['uploaded_file_url'] 
+			del request.session['skill']
+			del request.session['skilllevel']
+			del request.session['degreename']
+			del request.session['degreedate']
+			del request.session['aboutdeg']
+			del request.session['company']
+			del request.session['webcom']
+			del request.session['join_frm']
+			del request.session['endon']
+			del request.session['location'] 
+			del request.session['about_company']
+			del request.session['projname']
+			del request.session['startfrm']
+			del request.session['projendon']
+			del request.session['project_file_url']
+			del request.session['fb']
+			del request.session['twitter']
+			del request.session['gplus']
+			del request.session['linkedin']
+			del request.session['pinterest']
+			del request.session['behance']
 			return render_to_response("index.html", {'status':'True', 'mess':'Logout successfully !'}, context_instance = RequestContext(request))
 		else:
 			return render_to_response("index.html", context_instance = RequestContext(request))
@@ -220,9 +252,6 @@ def resetpassword(request):
 		print('0000000000000', email)
 		oldpassword = request.POST['oldpassword']
 		getoldpasswordfromdb = Register.objects.get(email=email)
-		print('1', oldpassword)
-		print('2', getoldpasswordfromdb )
-
 		if oldpassword == getoldpasswordfromdb:
 			passwordchanged = Register(
 				password=oldpassword
