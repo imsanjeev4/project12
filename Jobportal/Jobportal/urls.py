@@ -30,6 +30,7 @@ urlpatterns = [
 	url(r'^edit-profile/$', views.profile),
 	url(r'^candidate-detail/$', views.candidatedetail),
 	url(r'^logout/$', views.logout),
+	url(r'^reset/$', views.resetpassword),
 	
 
 

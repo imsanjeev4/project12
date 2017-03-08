@@ -43,6 +43,11 @@
                 <ul class="dropdown-menu">
                   <li><a href="/about-us">About Us</a></li>
                   <li><a href="/login">Login</a></li>
+				   <!--<li><a href="/logout">Logout</a></li>-->
+				   <form method="post" enctype="multipart/form-data" action="/logout/">
+				   {% csrf_token %}
+				   <input type="submit" class="btn" value="Logout">
+				   </form>
                   <li><a href="/register">Register</a></li>
                   <li><a href="job-listing.html">Job Listing</a></li>
                   <li><a href="job-detail.html">Job Detail</a></li>

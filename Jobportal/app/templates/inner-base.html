@@ -42,6 +42,10 @@
                 <ul class="dropdown-menu">
                   <li><a href="/about-us">About Us</a></li>
                   <li><a href="/login">Login</a></li>
+				  <form method="post" enctype="multipart/form-data" action="/logout/">
+				  {% csrf_token %}
+				   <input type="submit" class="btn" value="Logout">
+				   </form>
                   <li><a href="/register">Register</a></li>
                   <li><a href="job-listing.html">Job Listing</a></li>
                   <li><a href="job-detail.html">Job Detail</a></li>
@@ -54,6 +58,7 @@
                   <li><a href="faqs.html">FAQs</a></li>
                   <li><a href="404.html">404 Page</a></li>
                   <li><a href="typography.html">Typography</a></li>
+				  <li><a href="/reset/">ResetPassword</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="blog.html">Blog <span class="caret"></span></a>

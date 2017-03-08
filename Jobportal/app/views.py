@@ -203,50 +203,33 @@ def candidatedetail(request):
 	return render_to_response("candidate-detail.html", context_instance = RequestContext(request))
 
 def logout(request):
-	if request.method == 'POST' and request.session['sessionuser'] != None:
-		request.session['username'] = ''
-		request.session['email'] = ''
-		request.session['phone'] = ''
-		request.session['website'] = ''
-		request.session['address'] = ''
-		request.session['designation'] = ''
-		request.session['experience'] = ''
-		request.session['age'] = ''
-		request.session['current'] = ''
-		request.session['demand'] = ''
-		request.session['edulevel'] = ''
-		request.session['uploaded_file_url'] = '' 
-		request.session['aboutme'] = ''
-		request.session['skill'] = ''
-		request.session['skilllevel'] = ''
-		request.session['degreename'] = ''
-		request.session['degreedate'] = ''
-		request.session['aboutdeg'] = ''
-		request.session['company'] = ''
-		request.session['webcom'] = ''
-		request.session['join_frm'] = ''
-		request.session['endon'] = ''
-		request.session['location'] = '' 
-		request.session['about_company'] = ''
-		request.session['projname'] = ''
-		request.session['startfrm'] = ''
-		request.session['projendon'] = ''
-		request.session['project_file_url'] = ''
-		request.session['fb'] = ''
-		request.session['twitter'] = ''
-		request.session['gplus'] = ''
-		request.session['linkedin'] = ''
-		request.session['pinterest'] = ''
-		request.session['behance'] = ''
-		return render_to_response("index.html", context_instance = RequestContext(request))
+	if request.method == 'POST':
+		print('sssssssssss', request.session['sessionuser'])
+		request.session['sessionuser'] = ''
+		print('dada',request.session['sessionuser'])
+		if request.session['sessionuser'] == None:
+			return render_to_response("index.html", {'status':'True', 'mess':'Logout successfully !'}, context_instance = RequestContext(request))
+		else:
+			return render_to_response("index.html", context_instance = RequestContext(request))
+			
 	return render_to_response("index.html", context_instance = RequestContext(request))
 
 def resetpassword(request):
 	if request.method == 'POST':
+		email = request.session['sessionuser']
+		print('0000000000000', email)
 		oldpassword = request.POST['oldpassword']
-		getoldpasswordfromdb = Register.objects.filter(password=oldpassword)
+		getoldpasswordfromdb = Register.objects.get(email=email)
+		print('1', oldpassword)
+		print('2', getoldpasswordfromdb )
 
-		if oldpassword != getoldpasswordfromdb:
+		if oldpassword == getoldpasswordfromdb:
+			passwordchanged = Register(
+				password=oldpassword
+			)
+			passwordchanged.save()
+			return render_to_response("resetpassword.html", {'status': 'True', 'mess': 'Password changed successfully'}, content_type = RequestContext(request))
+		else:
 			return render_to_response("resetpassword.html", {'status': 'False', 'mess': 'Old password not match'}, content_type = RequestContext(request))
 		newpassword = request.POST['password']
 		confirmpassword = request.POST['confirmpassword']

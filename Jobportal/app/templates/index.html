@@ -2,6 +2,9 @@
 {% block content %}
 {% load staticfiles %}
 <!-- Search start -->
+{% if status == 'True' %}
+   <div class="alert alert-success" role="alert"><strong> {{ mess }}.</strong></div>
+{% endif %}
 <div class="searchwrap">
   <div class="container">
     <h3>One million success stories. <span>Start yours today.</span></h3>
