@@ -57,6 +57,8 @@ def login(request):
 				checkuser = Register.objects.get(emailid = username)
 				if  username == checkuser.emailid.strip() and password == checkuser.password:
 					request.session['sessionuser'] = username
+					getuserInfo = CandidateInfo.objects.all().filter(email = request.session['sessionuser'])
+					print(getuserInfo)
 					return render_to_response("edit-profile.html", {'mess': 'login successfully','status':'True'}, context_instance=RequestContext(request))
 				else:
 					return render_to_response("login.html", {'mess': 'Invalid Userid or Password', 'status':'False'},context_instance=RequestContext(request))
@@ -211,6 +213,11 @@ def logout_alt(request, *args, **kwargs):
 		print('key',sesskey)
 		del request.session[sesskey]
 	return original_logout(request, *args, **kwargs)
+def profile_retrive(request):
+	getuserInfo = CandidateInfo.objects.all().filter(email = request.session['sessionuser'])
+	print(getuserInfo)
+	return render_to_response("candidate-detail.html", {'data':getuserInfo}, context_instance = RequestContext(request))
+	
 	
 def logout(request):
 	if request.method == 'POST':
