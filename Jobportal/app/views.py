@@ -9,6 +9,9 @@ from django.template import RequestContext
 from django.core.files.storage import FileSystemStorage
 from app.models import Register, CandidateInfo
 import hashlib
+from django.contrib.sessions.models import Session
+from django.contrib.sessions.backends.base import SessionBase
+
 def index(request):
     return render_to_response("index.html", context_instance = RequestContext(request))
 
@@ -202,10 +205,21 @@ def profile(request):
 def candidatedetail(request):
 	return render_to_response("candidate-detail.html", context_instance = RequestContext(request))
 
+
+def logout_alt(request, *args, **kwargs):
+	for sesskey in request.session.keys():
+		print('key',sesskey)
+		del request.session[sesskey]
+	return original_logout(request, *args, **kwargs)
+	
 def logout(request):
 	if request.method == 'POST':
-		request.session['sessionuser'] = ''
+		Session.objects.all().delete()
+		return render_to_response("index.html", {'status':'True', 'mess':'Logout successfully !'}, context_instance = RequestContext(request))
+		del request.session[sessionuser]
+		print('del',request.session['sessionuser'] )
 		if request.session['sessionuser'] == None:
+			Session.objects.all().delete()
 			#request.session['username'] = No
 			del request.session['username']
 			del request.session['email'] 

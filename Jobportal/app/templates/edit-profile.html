@@ -5,8 +5,8 @@
 {% if status == 'True' %}
    <div class="alert alert-success" role="alert"><strong> {{ mess }}.</strong></div>
 {% endif %}
-<h1>{{ request.session.sessionuser }}</h1>
-{% if request.session.sessionuser != '' %}
+<h4>{{ request.session.sessionuser }}</h4>
+{% if request.session.sessionuser != None %}
 	<div class="pageTitle">
 	<div class="container">
     <div class="row">
