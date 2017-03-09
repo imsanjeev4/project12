@@ -46,20 +46,20 @@ def register(request):
 def login(request):
 	if request.method == 'POST':
 		check_count = Register.objects.count()
-		print('COunt', check_count)
 		if check_count > 0:
 			username = request.POST['username']
-			print('USERNAMERA',username)
 			password = request.POST['password']
-			print('PASSWORD',password)
 			checkuser = Register.objects.filter(emailid = username).exists()
 			if checkuser == True:
 				checkuser = Register.objects.get(emailid = username)
 				if  username == checkuser.emailid.strip() and password == checkuser.password:
 					request.session['sessionuser'] = username
-					getuserInfo = CandidateInfo.objects.all().filter(email = request.session['sessionuser'])
-					print(getuserInfo)
-					return render_to_response("edit-profile.html", {'mess': 'login successfully','status':'True'}, context_instance=RequestContext(request))
+					getuserInfo = CandidateInfo.objects.filter(email = request.session['sessionuser'])
+					if getuserInfo:
+						getlogindata=getuserInfo[0]
+						return render_to_response("edit-profile.html", {'mess': 'login successfully','status':'True', 'data':getlogindata}, context_instance=RequestContext(request))
+					else:
+						return render_to_response("edit-profile.html", {'mess': 'login successfully','status':'True'}, context_instance=RequestContext(request))
 				else:
 					return render_to_response("login.html", {'mess': 'Invalid Userid or Password', 'status':'False'},context_instance=RequestContext(request))
 			else:
@@ -81,6 +81,12 @@ def listview(request):
 
 def profile(request):
 	if request.method == 'POST':
+		print('sanjevveeeeeeeeeeee')
+		if request.session['sessionuser'] != 'None':
+			print('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC')
+			getuserprofileInfo = CandidateInfo.objects.filter(email = request.session['sessionuser'])
+			getprofiledata=getuserprofileInfo[0]
+			return render_to_response("edit-profile.html", {'status': 'True', 'mess':'Personal Information successfully saved !','user':username,'data':getprofiledata},context_instance = RequestContext(request))
 		username = request.POST['name']
 		email = request.POST['email']
 		phone = request.POST['phone']
@@ -96,7 +102,7 @@ def profile(request):
 		fs = FileSystemStorage()
 		filename_cv = fs.save(uploadcv.name, uploadcv)
 		uploaded_file_url = fs.url(filename_cv)
-		print('URL', uploaded_file_url )
+		#print('URL', uploaded_file_url )
 		aboutme = request.POST['aboutme']
 		skill = request.POST['skill']
 		skilllevel = request.POST['skilllevel']
@@ -162,41 +168,7 @@ def profile(request):
 		)
 		profileInfo.save()
 		print('Session',request.session['sessionuser'])
-		request.session['username'] = username
-		request.session['email'] = email
-		request.session['phone'] = phone
-		request.session['website'] = website
-		request.session['address'] = address
-		request.session['designation'] = designation
-		request.session['experience'] = experience
-		request.session['age'] = age
-		request.session['current'] = current
-		request.session['demand'] = demand
-		request.session['edulevel'] = edulevel
-		request.session['uploaded_file_url'] = uploaded_file_url 
-		request.session['aboutme'] = aboutme
-		request.session['skill'] = skill
-		request.session['skilllevel'] = skilllevel
-		request.session['degreename'] = degreename
-		request.session['degreedate'] = degreedate
-		request.session['aboutdeg'] = aboutdeg
-		request.session['company'] = company
-		request.session['webcom'] = webcom
-		request.session['join_frm'] = join_frm
-		request.session['endon'] = endon
-		request.session['location'] = location 
-		request.session['about_company'] = about_company
-		request.session['projname'] = projname
-		request.session['startfrm'] = startfrm
-		request.session['projendon'] = projendon
-		request.session['project_file_url'] = project_file_url
-		request.session['fb'] = fb
-		request.session['twitter'] = twitter
-		request.session['gplus'] = gplus
-		request.session['linkedin'] = linkedin
-		request.session['pinterest'] = pinterest
-		request.session['behance'] = behance
-		
+		getuserInfo = CandidateInfo.objects.filter(email = request.session['sessionuser'])
 		#get_data = CandidateInfo.objects.get(email=request.session['sessionuser'])
 		#get_data = CandidateInfo.objects.get(email=request.session['sessionuser'])
 		#print('DATA', get_data.project_desc)
