@@ -24,7 +24,7 @@
  {% if data %}
 	<td>{{ data.email }}</td>
 {% endif %}
-
+<h2>{{ url }}</h2>
 	<div class="listpgWraper">
 	<div class="container">
     <div class="row">
@@ -131,13 +131,13 @@
               </div>
               <div class="col-md-6">
                 <div class="formrow">
-                  <input type="file" name="uploadcv" class="form-control" value = "{{ data.uploadcv }}">
-				  <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+                  <input type="file" name="uploadcv" class="form-control" value = "{{ data.cv_path  }}">{{ data.cv_path  }}
+				  <a href="{{ data.cv_path  }}">{{ data.cv_path  }}</a></p>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea name="aboutme" class="form-control" placeholder="About Me" value = "{{ data.aboutme }}"></textarea>
+                  <textarea name="aboutme" class="form-control" placeholder="About Me" value = "{{ data.aboutme }}">{{ data.aboutme }}</textarea>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea class="form-control" name="aboutdeg" placeholder="About Degree" value = "{{ data.about_degree }}"></textarea>
+                  <textarea class="form-control" name="aboutdeg" placeholder="About Degree" value = "{{ data.about_degree }}">{{ data.about_degree }}</textarea>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@
               </div>
               <div class="col-md-12">
                 <div class="formrow">
-                  <textarea class="form-control" name="about_company" placeholder="About Company" value = "{{ data.about_company }}"></textarea>
+                  <textarea class="form-control" name="about_company" placeholder="About Company" value = "{{ data.about_company }}">{{ data.about_company }}</textarea>
                 </div>
               </div>
             </div>

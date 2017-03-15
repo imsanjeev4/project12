@@ -81,12 +81,12 @@ def listview(request):
 
 def profile(request):
 	if request.method == 'POST':
-		print('sanjevveeeeeeeeeeee')
-		if request.session['sessionuser'] != 'None':
-			print('CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC')
+		getsessionuser = request.session['sessionuser']
+		checkuser = CandidateInfo.objects.filter(email = getsessionuser).exists()
+		if checkuser == True:
 			getuserprofileInfo = CandidateInfo.objects.filter(email = request.session['sessionuser'])
 			getprofiledata=getuserprofileInfo[0]
-			return render_to_response("edit-profile.html", {'status': 'True', 'mess':'Personal Information successfully saved !','user':username,'data':getprofiledata},context_instance = RequestContext(request))
+			return render_to_response("edit-profile.html", {'mess': 'login successfully','status':'True', 'data':getprofiledata}, context_instance = RequestContext(request))
 		username = request.POST['name']
 		email = request.POST['email']
 		phone = request.POST['phone']
@@ -102,7 +102,7 @@ def profile(request):
 		fs = FileSystemStorage()
 		filename_cv = fs.save(uploadcv.name, uploadcv)
 		uploaded_file_url = fs.url(filename_cv)
-		#print('URL', uploaded_file_url )
+		print('URL', uploaded_file_url )
 		aboutme = request.POST['aboutme']
 		skill = request.POST['skill']
 		skilllevel = request.POST['skilllevel']
@@ -142,6 +142,7 @@ def profile(request):
 			expected_salary=demand,
 			edulevel=edulevel,
 			uploadcv=uploadcv,
+			cv_path=uploaded_file_url,
 			aboutme=aboutme,
 			skill_name=skill,
 			skill_level=skilllevel,
@@ -159,6 +160,7 @@ def profile(request):
 			project_end=projendon,
 			project_desc=projdesc,
 			project_file=project_file,
+			project_file_path=project_file_url,
 			facebook=fb,
 			twitter=twitter,
 			google_plus=gplus,
@@ -172,7 +174,7 @@ def profile(request):
 		#get_data = CandidateInfo.objects.get(email=request.session['sessionuser'])
 		#get_data = CandidateInfo.objects.get(email=request.session['sessionuser'])
 		#print('DATA', get_data.project_desc)
-		return render_to_response("edit-profile.html", {'status': 'True', 'mess':'Personal Information successfully saved !','user':username},context_instance = RequestContext(request))
+		return render_to_response("edit-profile.html", {'status': 'True', 'mess':'Personal Information successfully saved !','data':getuserInfo,'user':username,'url':uploaded_file_url},context_instance = RequestContext(request))
 	else:
 		return render_to_response("edit-profile.html", context_instance = RequestContext(request))
 
